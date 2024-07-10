@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #303635;
+}
+
+.container {
+  background-color: #3e2727;
+  width: 90%;
+  max-width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 5em 3em;
+  border-radius: 0.5em;
+  box-shadow: 10px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container h3 {
+  font-size: 1.2em;
+  color: #6b34ad;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 1.5px;
+}
+
+.container #submit-btn {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  background-color: #9bcf53;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  padding: 0.6em 2em;
+  transition: all 0.5s linear;
+}
+
+.container #submit-btn:hover {
+  background-color: #9bcf53d5;
+  transform: scale(0.9);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+#error-msg {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 1em;
+  background-color: #847c7c;
+  color: #6e1028;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container #question {
+  font-family: "Roboto Mono", monospace;
+  background-color: #98fcff;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #1a1919;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.4em 0 1em 0;
+  padding: 1em 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container input {
+  font-size: 1em;
+  font-weight: 600;
+  width: 2.35em;
+  color: #2a2a2a;
+  text-align: center;
+  padding: 0 0.2em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.12em solid #2a2a2a;
+  margin: 0 0.25em;
+}
+
+.container input:focus {
+  border-color: #2a2a2a;
+  outline: none;
+}
+
+.container input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #141214;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+#start-btn {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #4dc66a;
+  color: #2a2a2a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8em 1.8em;
+  border-radius: 50px;
+  transition: all 0.5s linear;
+}
+
+#start-btn:hover {
+  background-color: #238e3b;
+  transform: scale(0.9);
+}
+
+#result {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: #d1d1d1;
+}
+
+#result span {
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hide {
+  display: none;
+}
